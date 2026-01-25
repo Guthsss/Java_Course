@@ -1,4 +1,5 @@
 📘 Curso de Java Completo - Nélio Alves
+
 Este repositório contém anotações, exercícios e projetos desenvolvidos durante o Curso de Java Completo do professor Nélio Alves (Udemy).
 O objetivo deste repositório é registrar minha evolução na linguagem Java e consolidar conceitos fundamentais da programação orientada a objetos (POO), além de tópicos mais avançados como tratamento de exceções, coleções, interfaces, herança, JDBC, e programação com banco de dados.
 🧩 Conteúdo abordado no curso:
