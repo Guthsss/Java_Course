@@ -15,19 +15,17 @@ public class Main {
         int quantityInStock = input.nextInt();
 
         Product product = new Product(name, price, quantityInStock);
-        System.out.println("Product Data: " + name + ", " + price + ", " + product.getQuantity() + ", Total: $" + (price * product.getQuantity()));
+        System.out.println("Product Data: " + name + ", " + String.format("%.2f", price) + ", " + product.getQuantity() + ", Total: $" + product.TotalValueInStock());
 
         System.out.print("Enter the number of products to be added in stock: ");
         int numberOfProducts = input.nextInt();
         product.AddProduct(numberOfProducts);
-        System.out.println("Update Data: " + name + ", " + price + ", " + product.getQuantity() + ", Total: $" + (price * product.getQuantity()));
+        System.out.println("Update Data: " + name + ", " + String.format("%.2f", price) + ", " + product.getQuantity() + ", Total: $" + product.TotalValueInStock());
 
         System.out.print("Enter the number of procuts to be remove in stock: ");
         int numberOfProcuts = input.nextInt();
         product.RemoveProduct(numberOfProcuts);
-        System.out.println("Update Data: " + name + ", " + price + ", " + product.getQuantity() + ", Total: $" + (price * product.getQuantity()));
-
-
-
+        System.out.println("Update Data: " + name + ", " + String.format("%.2f", price) + ", " + product.getQuantity() + ", Total: $" + product.TotalValueInStock());
+        input.close();
     }
 }
