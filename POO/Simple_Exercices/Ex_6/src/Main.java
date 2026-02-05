@@ -1,7 +1,9 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
         System.out.print("Enter account number: ");
         int number = input.nextInt();
@@ -36,8 +38,6 @@ public class Main {
         money = input.nextDouble();
         account.withdraw(money);
         System.out.println(account);
-
-
-
+        input.close();
     }
 }

@@ -3,10 +3,10 @@ public class Account {
     private String holder;
     private double money;
 
-    public Account(int accountNumber, String holder, double money) {
+    public Account(int accountNumber, String holder, double inicialDeposit) {
         this.accountNumber = accountNumber;
         this.holder = holder;
-        this.money = money;
+        deposit(inicialDeposit);
     }
     public Account(int accountNumber, String holder) {
         this.accountNumber = accountNumber;
