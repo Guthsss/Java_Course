@@ -25,7 +25,6 @@ public class Main {
             return;
         }
         System.out.println("Account Data: ");
-        account.toString();
         System.out.println(account);
 
         System.out.println("Enter a deposit value: ");
