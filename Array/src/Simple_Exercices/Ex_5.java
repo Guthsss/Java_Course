@@ -27,5 +27,6 @@ public class Ex_5 {
             }
         }
         System.out.printf("Negative numbers: %d%n", count);
+        input.close();
     }
 }

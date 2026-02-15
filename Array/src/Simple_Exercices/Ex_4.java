@@ -31,5 +31,6 @@ public class Ex_4 {
             }
         }
         System.out.println("Number of pairs: " + count);
+        input.close();
     }
 }
