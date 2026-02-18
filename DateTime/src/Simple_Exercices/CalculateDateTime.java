@@ -75,7 +75,7 @@ public class CalculateDateTime {
         // Duration: diferença entre INSTANTES/TEMPO (com horas/minutos/segundos)
         Instant startInstant = d03;
         Instant endInstant = d03.plusSeconds(90);
-        Duration duration = Duration.between(startInstant, endInstant);
+        Duration duration = Duration.between(startInstant, endInstant).abs();
         System.out.println("Duration (instant):      " + duration.getSeconds() + " segundos");
 
         System.out.println();
@@ -98,7 +98,7 @@ public class CalculateDateTime {
         System.out.println("Truncado p/ minutos:     " + truncToMinutes);
 
         // 4.3) diferença em uma unidade específica usando ChronoUnit (sem precisar Duration manualmente)
-        long secondsBetween = ChronoUnit.SECONDS.between(d03, plus2Days);
+        long secondsBetween = Math.abs(ChronoUnit.HOURS.between(d03, minus3Hours));
         long hoursBetween = ChronoUnit.HOURS.between(d03, plus2Days);
         long daysBetween = ChronoUnit.DAYS.between(d03, plus2Days);
 
@@ -107,8 +107,10 @@ public class CalculateDateTime {
         System.out.println("Dias entre (d03 e +2d):     " + daysBetween);
 
         // 4.4) until(): muito parecido com between, só que como método de instância
-        long minutesUntil = d03.until(d03.plus(90, ChronoUnit.MINUTES), ChronoUnit.MINUTES);
+        long minutesUntil = Math.abs(d03.until(d03.plus(90, ChronoUnit.MINUTES), ChronoUnit.MINUTES));
+        long hourUntil = Math.abs(d03.until(d03.minus(2, ChronoUnit.HOURS), ChronoUnit.HOURS));
         System.out.println("Minutes until (+90min):  " + minutesUntil);
+        System.out.println(hourUntil);
 
         System.out.println();
         System.out.println("=== Observação importante ===");
