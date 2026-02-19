@@ -7,10 +7,12 @@ import java.util.List;
 
 public class Worker {
 
-    private String name;
-    private WorkerLevel level;
-    private Double baseSalary;
+    private final String name;
+    private final WorkerLevel level;
+    private final Double baseSalary;
+
     private final List<HourContract> hourContractList = new ArrayList<>();
+    private Department department;
 
     public Worker(String name, WorkerLevel level, Double baseSalary) {
         this.name = name;

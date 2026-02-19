@@ -1,4 +1,4 @@
-package main;
+package application;
 
 import entities.Department;
 import entities.HourContract;
@@ -57,8 +57,7 @@ public class Main {
             System.out.print("Duration: ");
             Integer hour = input.nextInt();
 
-            hourContract = new HourContract(localDate, valuePerHour, hour);
-            worker.addContract(hourContract);
+            worker.addContract(new HourContract(localDate, valuePerHour, hour));
         }
 
         System.out.println("Enter a month and year to calculate income (MM/YYYY)");

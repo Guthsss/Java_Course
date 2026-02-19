@@ -1,6 +1,6 @@
 📘 Complete Java Course - Nélio Alves
 This repository contains notes, exercises, and projects developed during the Complete Java Course by Nélio Alves (Udemy).
-The main purpose of this repository is to track my progress in Java programming while solidifying key object-oriented programming (OOP) concepts, as well as exploring advanced topics such as exception handling, collections, interfaces, inheritance, JDBC, and database programming.
+The application purpose of this repository is to track my progress in Java programming while solidifying key object-oriented programming (OOP) concepts, as well as exploring advanced topics such as exception handling, collections, interfaces, inheritance, JDBC, and database programming.
 🧩 Topics covered in the course:
 
 
