@@ -1,9 +1,6 @@
 package entities;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class HourContract {
 
@@ -20,5 +17,9 @@ public class HourContract {
 
     public double totalValue() {
         return hours * valuePerHour;
+    }
+
+    public LocalDate getDate() {
+        return date;
     }
 }

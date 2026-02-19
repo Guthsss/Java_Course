@@ -6,6 +6,7 @@ import entities.Worker;
 import entities.enums.WorkerLevel;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -35,6 +36,7 @@ public class Main {
 
         System.out.print("Base salary: ");
         Double baseSalary = input.nextDouble();
+        System.out.println(" ");
 
         worker = new Worker(nameWorker, wl, baseSalary);
 
@@ -49,10 +51,10 @@ public class Main {
             String date = input.next();
             LocalDate localDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
-            System.out.println("Value per hour: ");
+            System.out.print("Value per hour: ");
             double valuePerHour = input.nextInt();
 
-            System.out.println("Duration: ");
+            System.out.print("Duration: ");
             Integer hour = input.nextInt();
 
             hourContract = new HourContract(localDate, valuePerHour, hour);
@@ -61,11 +63,11 @@ public class Main {
 
         System.out.println("Enter a month and year to calculate income (MM/YYYY)");
         String month = input.next();
-        LocalDate localDate = LocalDate.parse(month, DateTimeFormatter.ofPattern("MM/yyyy"));
+        YearMonth ym = YearMonth.parse(month, DateTimeFormatter.ofPattern("MM/yyyy"));
 
-        System.out.println("Name: " + nameWorker);
-        System.out.println("Depatment: " + department);
-        System.out.println("Income for " + month + ":" + worker.income());
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Depatment: " + department.getName());
+        System.out.println("Income for " + month + ": " + worker.income(ym.getYear(), ym.getMonthValue()));
 
     }
 }

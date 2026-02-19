@@ -32,10 +32,23 @@ public class Worker {
     }
     public Double income (Integer year, Integer month) {
 
-        return baseSalary;
+        double sum = (baseSalary == null ? 0.0 : baseSalary);
+
+        for (HourContract contract : hourContractList) {
+
+
+            int cYear = contract.getDate().getYear();
+            int cMonth = contract.getDate().getMonthValue();
+
+            if (cYear == year && cMonth == month) {
+               sum += contract.totalValue();
+            }
+        }
+        return sum;
     }
 
     public List<HourContract> getHourContractList() {
+
         return hourContractList;
     }
 
