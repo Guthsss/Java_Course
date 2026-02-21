@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.PrimitiveIterator;
-
 public class OrderItem {
 
     private Integer quantity;
@@ -15,6 +13,19 @@ public class OrderItem {
     }
 
     public Double subTotal () {
-        return 0.0;
+        return quantity * price;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public Product getProduct() {
+        return product;
     }
 }
+
