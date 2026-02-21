@@ -31,14 +31,13 @@ public class Main {
         String nameWorker = input.nextLine();
 
         System.out.print("Level: ");
-        String wlS = input.next();
-        WorkerLevel wl = WorkerLevel.valueOf(wlS);
+        String workerLevel = input.next();
 
         System.out.print("Base salary: ");
         Double baseSalary = input.nextDouble();
         System.out.println(" ");
 
-        worker = new Worker(nameWorker, wl, baseSalary);
+        worker = new Worker(nameWorker, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(nameDepartment));
 
         System.out.print("How many contracts to this worker? ");
         int n = input.nextInt();
@@ -48,8 +47,7 @@ public class Main {
             System.out.println(" ");
 
             System.out.print("Date (DD/MM/YYYY)");
-            String date = input.next();
-            LocalDate localDate = LocalDate.parse(date, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+            LocalDate date = LocalDate.parse(input.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
             System.out.print("Value per hour: ");
             double valuePerHour = input.nextInt();
@@ -57,15 +55,15 @@ public class Main {
             System.out.print("Duration: ");
             Integer hour = input.nextInt();
 
-            worker.addContract(new HourContract(localDate, valuePerHour, hour));
+            worker.addContract(new HourContract(date, valuePerHour, hour));
         }
 
         System.out.println("Enter a month and year to calculate income (MM/YYYY)");
         String month = input.next();
-        YearMonth ym = YearMonth.parse(month, DateTimeFormatter.ofPattern("MM/yyyy"));
+        LocalDate ym = LocalDate.parse(month, DateTimeFormatter.ofPattern("MM/yyyy"));
 
         System.out.println("Name: " + worker.getName());
-        System.out.println("Depatment: " + department.getName());
+        System.out.println("Depatment: " + worker.getDepartment().getName());
         System.out.println("Income for " + month + ": " + worker.income(ym.getYear(), ym.getMonthValue()));
 
     }

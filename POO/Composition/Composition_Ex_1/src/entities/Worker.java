@@ -10,14 +10,14 @@ public class Worker {
     private final String name;
     private final WorkerLevel level;
     private final Double baseSalary;
-
-    private final List<HourContract> hourContractList = new ArrayList<>();
     private Department department;
+    private final List<HourContract> hourContractList = new ArrayList<>();
 
-    public Worker(String name, WorkerLevel level, Double baseSalary) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
+        this.department = department;
     }
 
     public void addContract(HourContract contract) {
@@ -56,5 +56,9 @@ public class Worker {
 
     public String getName() {
         return name;
+    }
+
+    public Department getDepartment() {
+        return department;
     }
 }

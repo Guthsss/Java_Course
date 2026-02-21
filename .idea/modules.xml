@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/POO/Composicao_Ex1/Composicao_Ex1.iml" filepath="$PROJECT_DIR$/POO/Composicao_Ex1/Composicao_Ex1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition_Ex_1/Composition_Ex_1.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition_Ex_1/Composition_Ex_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition_Ex_2/Composition_Ex_2.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition_Ex_2/Composition_Ex_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition_Ex_3/Composition_Ex_3.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition_Ex_3/Composition_Ex_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/DateTime/DateTime.iml" filepath="$PROJECT_DIR$/DateTime/DateTime.iml" />
       <module fileurl="file://$PROJECT_DIR$/Enums/Enums.iml" filepath="$PROJECT_DIR$/Enums/Enums.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Simple_Exercices/Ex_1/Ex_1.iml" filepath="$PROJECT_DIR$/POO/Simple_Exercices/Ex_1/Ex_1.iml" />
