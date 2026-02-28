@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/POO/ClassAbstract/Abstract_Ex_1/Abstract_Ex_1.iml" filepath="$PROJECT_DIR$/POO/ClassAbstract/Abstract_Ex_1/Abstract_Ex_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/ClassAbstract/ClassAbstract.iml" filepath="$PROJECT_DIR$/POO/ClassAbstract/ClassAbstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition_Ex_1/Composition_Ex_1.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition_Ex_1/Composition_Ex_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Composition/Composition_Ex_2/Composition_Ex_2.iml" filepath="$PROJECT_DIR$/POO/Composition/Composition_Ex_2/Composition_Ex_2.iml" />
