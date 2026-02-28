@@ -14,13 +14,13 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         List<Employee> employeeList = new ArrayList<>();
-        Employee employee;
 
         System.out.print("Enter the number of employees: ");
         int n = input.nextInt();
 
         for (int i = 0;i < n; i++) {
             System.out.println("Employee #" + (i+1) + " data:");
+
             System.out.print("Outsourced (y/n)? ");
             String outSouced = input.next();
             input.nextLine();
@@ -36,11 +36,9 @@ public class Main {
 
             if (outSouced.equalsIgnoreCase("y")) {
                 System.out.print("Additional charge: ");
-                employee = new OutsoucedEmployee(name, valuePerHour, hours, input.nextDouble());
-                employeeList.add(employee);
+                employeeList.add(new OutsoucedEmployee(name, valuePerHour, hours, input.nextDouble()););
             } else {
-                employee = new Employee(name, valuePerHour, hours);
-                employeeList.add(employee);
+                employeeList.add(new Employee(name, valuePerHour, hours););
             }
 
         }
@@ -48,12 +46,7 @@ public class Main {
         System.out.println("PAYMENTS:");
 
         for (Employee e : employeeList) {
-            if (e instanceof OutsoucedEmployee outsoucedEmployee) {
-                System.out.println(outsoucedEmployee.getName() + " - $ " +
-                        outsoucedEmployee.payment());
-            } else {
-                System.out.println(e.getName() + " -  $ " + e.payment());
-            }
+            System.out.println(e.getName() + " - $ " + e.payment());
         }
 
     }
