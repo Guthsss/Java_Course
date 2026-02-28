@@ -36,9 +36,9 @@ public class Main {
 
             if (outSouced.equalsIgnoreCase("y")) {
                 System.out.print("Additional charge: ");
-                employeeList.add(new OutsoucedEmployee(name, valuePerHour, hours, input.nextDouble()););
+                employeeList.add(new OutsoucedEmployee(name, valuePerHour, hours, input.nextDouble()));
             } else {
-                employeeList.add(new Employee(name, valuePerHour, hours););
+                employeeList.add(new Employee(name, valuePerHour, hours));
             }
 
         }
