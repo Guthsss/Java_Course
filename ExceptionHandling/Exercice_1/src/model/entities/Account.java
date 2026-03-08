@@ -24,16 +24,21 @@ public class Account {
     }
 
     public void withdraw(Double amount) throws DomainExpedicion {
+        validadewithdraw(amount);
+        balance -= amount;
+    }
+
+    private void validadewithdraw(Double amount) throws DomainExpedicion {
         if (balance < amount) {
             throw new DomainExpedicion("not enough balance");
         } else if (withdrawLimit < amount) {
             throw new DomainExpedicion("The amount exceeds withdraw limit");
         }
-        balance -= amount;
     }
 
     public Double getBalance() {
         return balance;
     }
 }
+
 
