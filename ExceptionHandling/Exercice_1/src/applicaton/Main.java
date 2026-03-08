@@ -3,7 +3,6 @@ package applicaton;
 import model.Expedicion.DomainExpedicion;
 import model.entities.Account;
 
-import java.lang.reflect.AccessFlag;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -37,6 +36,8 @@ public class Main {
             System.out.println("New balance: " + account.getBalance());
         } catch (DomainExpedicion e) {
             System.out.println("Withdraw error: " + e.getMessage());
+        } catch (RuntimeException e) {
+            System.out.println("Unexpected error");
         }
     }
 }
