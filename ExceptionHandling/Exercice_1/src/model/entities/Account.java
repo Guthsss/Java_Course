@@ -9,7 +9,10 @@ public class Account {
     private Double balance;
     private Double withdrawLimit;
 
-    public Account(Integer number, String holder, Double balance, Double withdrawLimit) {
+    public Account(Integer number, String holder, Double balance, Double withdrawLimit) throws DomainExpedicion {
+        if (balance < 0) {
+            throw new DomainExpedicion("balance must be positive");
+        }
         this.number = number;
         this.holder = holder;
         this.balance = balance;
