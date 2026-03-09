@@ -34,6 +34,8 @@
       <module fileurl="file://$PROJECT_DIR$/POO/Inheritance_Polymorphism/Polymorphism_Ex_2/Polymorphism_Ex_2.iml" filepath="$PROJECT_DIR$/POO/Inheritance_Polymorphism/Polymorphism_Ex_2/Polymorphism_Ex_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Inheritance_Polymorphism/Polymorphism_Ex__1/Polymorphism_Ex__1.iml" filepath="$PROJECT_DIR$/POO/Inheritance_Polymorphism/Polymorphism_Ex__1/Polymorphism_Ex__1.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Simple_Exercices/Simple_Exercices.iml" filepath="$PROJECT_DIR$/POO/Simple_Exercices/Simple_Exercices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WorkingWithArchives/Txt/Txt.iml" filepath="$PROJECT_DIR$/WorkingWithArchives/Txt/Txt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WorkingWithArchives/WorkingWithArchives.iml" filepath="$PROJECT_DIR$/WorkingWithArchives/WorkingWithArchives.iml" />
     </modules>
   </component>
 </project>
