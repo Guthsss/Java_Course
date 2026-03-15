@@ -40,8 +40,7 @@ public class Main {
         }
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/home/guths/Downloads/out/summary.csv"))) {
             for (Product product : productList) {
-                bufferedWriter.write(product.getName() + "," + product.getPrice() + "," +
-                        product.getQuantity());
+                bufferedWriter.write(product.toString());
                 bufferedWriter.newLine();
             }
 
