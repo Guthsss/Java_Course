@@ -17,7 +17,9 @@ public class Main {
         Scanner input = new Scanner(System.in);
         List<Product> productList = new ArrayList<>();
 
-        boolean success = new File("/home/guths/Downloads" + "/out").mkdirs();
+        String path = input.nextLine();
+
+        boolean success = new File(path + "/out").mkdirs();
         if (!success) {
             System.out.println("Diretório já existe ou não pôde ser criado.");
         }
@@ -38,7 +40,7 @@ public class Main {
                 i--; // Repetir a entrada
             }
         }
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/home/guths/Downloads/out/summary.csv"))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path + "/out/summary.csv"))) {
             for (Product product : productList) {
                 bufferedWriter.write(product.toString());
                 bufferedWriter.newLine();
