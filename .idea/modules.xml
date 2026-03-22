@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/ExceptionHandling/Exercice_1/Exercice_1.iml" filepath="$PROJECT_DIR$/ExceptionHandling/Exercice_1/Exercice_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Inheritance_Polymorphism/Inheritance_Ex_1/Inheritance_Ex_1.iml" filepath="$PROJECT_DIR$/POO/Inheritance_Polymorphism/Inheritance_Ex_1/Inheritance_Ex_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Inheritance_Polymorphism/Inheritance_Polymorphism.iml" filepath="$PROJECT_DIR$/POO/Inheritance_Polymorphism/Inheritance_Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Interface/Interface.iml" filepath="$PROJECT_DIR$/POO/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_Course.iml" filepath="$PROJECT_DIR$/.idea/Java_Course.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/Inheritance_Polymorphism/Override/Override.iml" filepath="$PROJECT_DIR$/POO/Inheritance_Polymorphism/Override/Override.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
@@ -36,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/POO/Simple_Exercices/Simple_Exercices.iml" filepath="$PROJECT_DIR$/POO/Simple_Exercices/Simple_Exercices.iml" />
       <module fileurl="file://$PROJECT_DIR$/WorkingWithArchives/WorkingWithArchives.iml" filepath="$PROJECT_DIR$/WorkingWithArchives/WorkingWithArchives.iml" />
       <module fileurl="file://$PROJECT_DIR$/WorkingWithArchives/cr_168_Exercice/cr_168_Exercice.iml" filepath="$PROJECT_DIR$/WorkingWithArchives/cr_168_Exercice/cr_168_Exercice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO/Interface/cr_172_175/cr_172_175.iml" filepath="$PROJECT_DIR$/POO/Interface/cr_172_175/cr_172_175.iml" />
       <module fileurl="file://$PROJECT_DIR$/WorkingWithArchives/src/src.iml" filepath="$PROJECT_DIR$/WorkingWithArchives/src/src.iml" />
     </modules>
   </component>
